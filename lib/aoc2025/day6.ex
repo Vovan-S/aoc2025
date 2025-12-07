@@ -38,7 +38,7 @@ defmodule Aoc2025.Day6 do
   end
 
   defp parse2(input_string) do
-    [ops | numbers] = 
+    [ops | numbers] =
       input_string
       |> String.trim()
       |> String.split("\n")
@@ -52,8 +52,8 @@ defmodule Aoc2025.Day6 do
         digits =
           digits
           |> Tuple.to_list()
-          |> Enum.reject(& &1 == ?\s)
-          |> Enum.map(& &1 - ?0)
+          |> Enum.reject(&(&1 == ?\s))
+          |> Enum.map(&(&1 - ?0))
           |> Enum.reverse()
 
         case digits do

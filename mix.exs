@@ -21,7 +21,7 @@ defmodule Aoc2025.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:nx, "~> 0.9"},
+      {:nx, "~> 0.9"}
     ]
   end
 end

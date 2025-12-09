@@ -40,6 +40,7 @@ defmodule Aoc2025.Day4 do
   defp removable_iter(field, removed_total) do
     boxes_to_remove = removable(field)
     removed_now = Nx.sum(boxes_to_remove) |> Nx.to_number()
+
     if removed_now == 0 do
       removed_total
     else
